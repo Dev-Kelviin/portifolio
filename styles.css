@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+  }
+  
+    nav {
+    background: linear-gradient(to bottom, #333333b2, #1B1B1B);
+    }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 3rem;
+  }
+  
+  .navbar li {
+    margin: 0 50px;
+  }
+  
+  .navbar a {
+    color: #ffffffc9;
+    text-decoration: none;
+    font-size: 36px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #f0a500;
+  }
+  
+  section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .aba-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80vh;
+    gap: 20px; /* Espaço entre a imagem e o título */
+    margin-top: 15px; /* Adiciona espaçamento equivalente à altura da navbar */
+  }
+  
+  .image {
+    width: 45%; /* Definir uma largura fixa de 30% da área visível */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 100%; /* Define uma altura máxima fixa */
+    object-fit: contain; /* Garante que a imagem mantenha a proporção dentro do container */
+  }
+  
+  .title {
+    flex: 1; /* O título ocupa o espaço restante ao lado da imagem */
+    font-size: 8rem;
+    padding-left: 15px;
+    color: #ffffffc9;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+}
+
+.skills-section {
+    padding: 30px 30px;
+    text-align: center;
+    color: #ffffffc9;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas para as imagens */
+    gap: 50px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens */
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skill-icon {
+    width: 100px; /* Largura fixa das imagens */
+    height: 100px; /* Altura fixa das imagens */
+    object-fit: contain; /* Garante que a imagem se ajuste sem perder proporção */
+    margin-bottom: 10px; /* Espaço entre a imagem e a descrição */
+  }
+  
+  .skills-section p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.TtuloHab{
+    font-size: 6rem;
+    padding-bottom: 30px;
+}
+  
+
+
