@@ -37,10 +37,15 @@
     color: #f0a500;
   }
   
-  section {
+  /* section {
     padding: 100px 20px;
     text-align: center;
-  }
+  } */
+
+  /* #inicio{
+    padding: 100px 20px;
+    text-align: center;
+  } */
   
   .aba-inicial {
     display: flex;
@@ -64,13 +69,76 @@
     padding-left: 15px;
     color: #ffffffc9;
   }
+
+  .aba-inicial-perfil {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin-top: 15px; /* Espaçamento equivalente à altura da navbar */
+  }
+
+  .Info {
+    text-align: left;
+    font-size: 4rem;
+    padding-left: 15px;
+    color: #ffffffc9;
+  }
+
+  .h2Info{
+    text-align: left;
+    font-size: 3rem;
+    padding-left: 15px;
+    color: #ffffffc9;
+  }
+  
+  .pInfo {
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 15px;
+    color: #ffffffc9;
+  }
+
+  .info-text {
+    max-width: 60%; /* Ajuste a largura máxima do bloco de texto */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
   
   html {
     scroll-behavior: smooth;
 }
 
+.sectionIcons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 colunas para as imagens */
+  gap: 10px; /* Espaçamento entre os itens */
+  justify-items: center; /* Centraliza os itens */
+}
+
+.sectionIcon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.IconContact{
+  width: 90px; /* Largura fixa das imagens */
+  height: 90px; /* Altura fixa das imagens */
+  object-fit: contain; /* Garante que a imagem se ajuste sem perder proporção */
+  margin-bottom: 10px; /* Espaço entre a imagem e a descrição */
+}
+
+#habilidades{
+  padding-bottom: 80px;
+}
+
+#projetos{
+  padding-top: 80px;
+}
+
 .skills-section {
-    padding: 30px 30px;
+    padding: 50px 30px;
     text-align: center;
     color: #ffffffc9;
   }
@@ -80,6 +148,7 @@
     grid-template-columns: repeat(5, 1fr); /* 5 colunas para as imagens */
     gap: 50px; /* Espaçamento entre os itens */
     justify-items: center; /* Centraliza os itens */
+    
   }
   
   .skill-item {
@@ -103,13 +172,13 @@
 
 .TtuloHab{
     font-size: 6rem;
-    padding-bottom: 30px;
 }
   
 .TituloProject{
   font-size: 6rem;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   color: #ffffffc9;
+  text-align: center;
 }
 
 .projects-container {
@@ -120,8 +189,8 @@
 .projects-row {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Espaçamento entre os cards */
-  margin-bottom: 20px; /* Espaçamento entre as fileiras */
+  gap: 50px; /* Espaçamento entre os cards */
+  margin-bottom: 50px; /* Espaçamento entre as fileiras */
 }
 
 .card {
@@ -148,11 +217,57 @@
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 15px;
   background: #444; /* Fundo do título do card */
   text-align: center;
   width: 100%;
 }
 
+.containerRefresh {
+  display: flex;
+  justify-content: center; /* Centraliza o título na horizontal */
+  align-items: center; /* Alinha o título verticalmente (se necessário) */
+  position: relative;
+  height: 100px; /* Ajuste a altura conforme necessário */
+}
 
+
+.buttonInfo {
+  position: absolute;
+  right: 80px; /* Adiciona o espaçamento desejado ao lado direito do botão */
+  top: 50%; /* Centraliza verticalmente o botão */
+  transform: translateY(-50%); /* Ajusta o botão para ficar exatamente no meio verticalmente */
+}
+
+.buttonInfo img {
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço embaixo da imagem */
+}
+
+.buttonHab {
+  position: absolute;
+  right: 80px; /* Adiciona o espaçamento desejado ao lado direito do botão */
+  top: 50%; /* Centraliza verticalmente o botão */
+  transform: translateY(-50%); /* Ajusta o botão para ficar exatamente no meio verticalmente */
+}
+
+.buttonHab img {
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço embaixo da imagem */
+}
+
+.buttonProj {
+  position: absolute;
+  right: 260px; /* Adiciona o espaçamento desejado ao lado direito do botão */
+  top: 50%; /* Centraliza verticalmente o botão */
+  transform: translateY(-100%); /* Ajusta o botão para ficar exatamente no meio verticalmente */
+}
+
+.buttonProj img {
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço embaixo da imagem */
+}
