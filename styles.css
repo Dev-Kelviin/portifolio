@@ -54,7 +54,7 @@
   .image {
     width: 45%; /* Definir uma largura fixa de 30% da área visível */
     height: auto; /* Mantém a proporção da imagem */
-    max-height: 100%; /* Define uma altura máxima fixa */
+    max-height: 115%; /* Define uma altura máxima fixa */
     object-fit: contain; /* Garante que a imagem mantenha a proporção dentro do container */
   }
   
@@ -106,5 +106,53 @@
     padding-bottom: 30px;
 }
   
+.TituloProject{
+  font-size: 6rem;
+  padding-bottom: 30px;
+  color: #ffffffc9;
+}
+
+.projects-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os cards */
+  margin-bottom: 20px; /* Espaçamento entre as fileiras */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffffc9;
+  width: 300px; /* Largura dos cards */
+  background: #333; /* Fundo dos cards */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao card */
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  padding: 15px;
+  background: #444; /* Fundo do título do card */
+  text-align: center;
+  width: 100%;
+}
 
 
